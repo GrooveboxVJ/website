@@ -1,0 +1,419 @@
+@font-face {
+    font-family: Pacifico;
+    src: url(fonts/Pacifico-Regular.ttf);
+}
+@font-face {
+    font-family: Lobster;
+    src: url(fonts/Lobster-Regular.ttf);
+}
+:root{
+    --pseudo-width: 800px;
+    --pseudo-height: 800px;
+    --pseudo-backgroundcolor1: #ff0000;
+    --pseudo-backgroundcolor2: #0000ff;
+    --pseudo-scroll: 0px;
+    --pseudo-mouseX: 0;
+    --pseudo-mouseY: 0;
+    }    
+
+body{
+    background-color: rgb(25, 25, 25);
+    color: white;
+    overflow-x: hidden;
+}
+video {
+    object-fit: cover;
+    width: 99vw;
+    height: 99vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -5;
+  }
+.navbar{
+    position: absolute;
+    font-family: Lobster;
+    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    translate: (var(--pseudo-mouseX),var(--pseudo-mouseY));
+}
+.navicon{
+    position: relative;
+    display: flex;
+    user-select: none;
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    content: '';
+    border-radius: 10px;
+    transition:all 1s;
+
+}
+.navicon::before {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    content:'';
+    width: var(--pseudo-width);
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+    background-image: url(img/smoke.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: var(--pseudo-scroll) bottom;
+    transition: all 0.3s;
+    translate: 0 0px;
+    transform: rotate(7deg);
+    z-index: 2;
+    
+}
+.navmenu{
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.viewer{
+    display: flex;
+    flex-wrap: wrap;
+    width: var(--pseudo-width);
+    align-content: center;
+    justify-content: center;
+}
+.flag {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin: 10px;
+}
+#content0{
+    user-select: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    background-image: url(img/TipikParty2023.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+#content0::before {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    content:'';
+    width: var(--pseudo-width);
+    height: var(--pseudo-height);
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+    background-image: url(img/smoke.png);
+    background-repeat: repeat-x;
+    background-size: 20% 20%;
+    background-position: var(--pseudo-scroll) bottom;
+    transition: all 0.3s;
+    translate: 0 -10px;
+    transform: rotate(-7deg);
+    z-index: 2;
+    
+}
+#content0::after {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    content:'';
+    width: var(--pseudo-width);
+    height: var(--pseudo-height);
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+   background-color: rgb(50, 174, 205);
+   translate: 100% 0%;
+    transition: all 0.3s;
+    z-index: 2;
+    
+}
+#content1{
+    user-select: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    background-image: url(img/Godsavethe90s.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+#content1::after {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    content:'';
+    width: var(--pseudo-width);
+    height: var(--pseudo-height);
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+   background-color: rgb(50, 174, 205);
+   translate: 100% 0%;
+    transition: all 0.3s;
+    z-index: 2;
+    
+}
+.section1title{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    padding: 20px;
+    background-color: black;
+    border-radius: 10px 10px 10px 0px;
+    font-size: 50px;
+}
+.section1text{
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px;
+    font-size:30px;
+    padding: 30px;
+    text-shadow: 2px 2px 2px black;
+    background-color: #aa60c8a8;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.hello{
+    transform: rotate(3deg);
+    text-shadow: 2px 2px 2px black;
+}
+.myphoto{
+    position: relative;
+    top: 50px;
+    left: 100px;
+    width: 210px;
+    height: 210px;
+    border-radius: 150px;
+    background-image: url(img/lowupphoto.jpg);
+    background-size: cover;
+}
+.photofooter{
+    user-select: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    position: relative;
+    top: 90px;
+    left: 30px;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px black;
+}
+.myname{ 
+    display: flex;
+    flex-wrap: wrap;
+    user-select: none;
+    font-size: 80px;
+    background: linear-gradient(
+        120deg,
+        #051ac0,
+        #5768df,
+        #8164d7,
+        #aa60c8,
+        #cc60b3,
+        #e3689c,
+        #ed7889,
+        #ee8c7e,
+        #e99e7c,
+        #e4ac7f,
+        #e0b585,
+        burlywood
+      );
+      -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: rotate(-6deg);
+}
+
+.namefooter{
+    user-select: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: right;
+    text-shadow: 2px 2px 2px black;
+}
+p{  display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+    z-index: -3;
+    font-family: Pacifico;
+    font-size: 30px;
+    width: var(--pseudo-width);
+    height: var(--pseudo-height);
+    align-content: center;
+    justify-content: center;
+}
+
+.wrapper0 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    
+}
+
+.wrapper1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/mask.png);
+    background-size: cover;
+    background-position: center;
+}
+.wrapper2{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: #ed7889;
+}
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0%);
+    transition: all 0.5s;
+}
+.sidebar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: bottom;
+    width:640px;
+    height: var(--pseudo-height);
+    background-color: #5768df;
+}
+.spacer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    width:640px;
+    height: 50%;
+}
+.groovebox{
+    display: flex;
+    flex-wrap: wrap;
+    width: 640px;
+    height: 480px;
+    }
+.cable{
+    position: relative;
+    left: 195px;
+    top: 37px;
+    width: 446px;
+    height: 104px;
+    background-image: url(groovebox/cable.gif);
+    z-index: 2;
+}
+.box{
+    position: relative;
+    left: 90px;
+    top: 31px;
+    width: 384px;
+    height: 315px;
+    background-image: url(groovebox/box.gif);
+    z-index: 3;
+}
+.gbtext{
+    position: relative;
+    left: -250px;
+    top: 60px;
+    width: 150px;
+    height: 70px;
+    color:rgb(25, 25, 25);
+    z-index: 5;
+}
+.jog{
+    position: relative;
+    left: 310px;
+    top: -275px;
+    width: 111px;
+    height: 98px;
+    background-image: url(groovebox/jog.gif);
+    z-index: 4;
+}
+.fader1{
+    position: relative;
+    left: 0px;
+    top: -180px;
+    width: 34px;
+    height: 193px;
+    background-image: url(groovebox/fader.gif);
+    z-index: 5;
+}
+.fader2{
+    position: relative;
+    left: 10px;
+    top: -180px;
+    width: 34px;
+    height: 193px;
+    background-image: url(groovebox/fader.gif);
+    z-index: 5;
+}
+.btngrid{
+    position:relative;
+    display: flex;
+    flex-wrap: wrap;
+    left: 20px;
+    top: -180px;
+    width: 200px;
+    height: 200px;
+    z-index: 4;
+}
+.btn{
+    position: relative;
+    width: 50px;
+    height: 46px;
+    z-index: 5;
+    background-image: url(groovebox/bouton.gif);
+}
+.rightbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    translate: 0px -5px;
+    width: 40%;
+    border: solid 5px black;
+    height: var(--pseudo-height);
+    background-color: #8164d7;
+}
