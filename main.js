@@ -5,6 +5,15 @@ var scrollanchors = [];
 getSize();
 getscrollIndex();
 
+
+let main = document.getElementById('main');
+let mainoffsetX=540;
+let mainoffsetY=40;
+const onMouseMove = (e) =>{
+  main.style.left = (e.pageX-mainoffsetX) + 'px';
+  main.style.top = (e.pageY-mainoffsetY) + 'px';
+}
+document.addEventListener('mousemove', onMouseMove);
 function getSize() {
     const width = window.innerWidth;
     const height = window.innerHeight; 
@@ -15,6 +24,16 @@ function getSize() {
        scrollanchors[i]=(height*i)-(height*0.33); 
     }
     console.log(scrollanchors);
+    if (width<=1140){
+        document.getElementById("rightbar").classList.add("hidden")
+    } else {
+        document.getElementById("rightbar").classList.remove("hidden")
+    }
+    if (width<=1640){
+        document.getElementById("rightbar2").classList.add("hidden")
+    } else {
+        document.getElementById("rightbar2").classList.remove("hidden")
+    }
 }
 
 function showSection(){

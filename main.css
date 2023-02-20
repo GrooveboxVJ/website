@@ -20,6 +20,117 @@ body{
     background-color: rgb(25, 25, 25);
     color: white;
     overflow-x: hidden;
+    cursor: none;
+}
+.main{
+    user-select: none;
+    position: absolute;
+    height: 205px;
+    width: 541px;
+    background-image: url(groovebox/main.png);
+}
+.main:active{
+    user-select: none;
+    position: absolute;
+    height: 205px;
+    width: 541px;
+    background-image: url(groovebox/main2.png);
+}
+
+h1{
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    margin: 0px;
+}
+h2{
+    background-color: rgb(233, 250, 122);
+    padding: 20px;
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    border-radius: 30px;
+    margin-top: 100px;
+    z-index: 6;
+}
+#content2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+.line{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.print{
+    background-color: #7c5543;
+    padding-left: 10px; 
+    padding-right: 10px;
+    text-shadow: 2px 2px 1px black;
+    margin-right: 20px;
+}
+.montage{
+    background-color: #58437c;
+    padding-left: 10px; 
+    padding-right: 10px;
+    text-shadow: 2px 2px 1px black;
+    margin-right: 20px;
+}
+.animation{
+    background-color: #437c78;
+    padding-left: 10px; 
+    padding-right: 10px;
+    text-shadow: 2px 2px 1px black;
+    margin-right: 20px;
+}
+.son{
+    background-color: #7c7743;
+    padding-left: 10px; 
+    padding-right: 10px;
+    text-shadow: 2px 2px 1px black;
+    margin-right: 20px;
+}
+.live{
+    background-color: #7c436d;
+    padding-left: 10px; 
+    padding-right: 10px;
+    text-shadow: 2px 2px 1px black;
+    margin-right: 20px;
+}
+.streaming{
+    background-color: #434e7c;
+    padding-left: 10px; 
+    padding-right: 10px;
+    text-shadow: 2px 2px 1px black;
+    margin-right: 20px;
+}
+.web{
+    background-color: #58437c;
+    padding-left: 10px; 
+    padding-right: 10px;
+    text-shadow: 2px 2px 1px black;
+    margin-right: 20px;
+}
+.langues{
+    margin: 40px;
+    background-color: #000000;
+    padding-left: 10px; 
+    padding-right: 10px;
+    text-shadow: 2px 2px 1px black;
+    margin-right: 20px;
+}
+.instruments{
+    background-color: #000000;
+    padding-left: 10px; 
+    padding-right: 10px;
+    text-shadow: 2px 2px 1px black;
+    margin-right: 20px;
 }
 video {
     object-fit: cover;
@@ -299,6 +410,17 @@ section {
     height: 100%;
     background-color: #ed7889;
 }
+.wrapper3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 60%;
+    background-image: url(img/mask2.png);
+    background-size: var(--pseudo-width)+"px" var(--pseudo-height)+"px";
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+}
 .hidden {
     opacity: 0;
     filter: blur(5px);
@@ -320,14 +442,22 @@ section {
     height: var(--pseudo-height);
     background-color: #5768df;
 }
+
 .spacer{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    font-size: 60px;
+    font-size: 50px;
     width:640px;
     height: 50%;
+}
+.spacertext{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 .groovebox{
     display: flex;
@@ -338,10 +468,19 @@ section {
 .cable{
     position: relative;
     left: 195px;
-    top: 37px;
-    width: 446px;
-    height: 104px;
-    background-image: url(groovebox/cable.gif);
+    top: 40px;
+    width: 449px;
+    height: 95px;
+    background-image: url(groovebox/cable0001.png);
+    z-index: 2;
+}
+.cable:hover{
+    position: relative;
+    left: 195px;
+    top: 40px;
+    width: 449px;
+    height: 95px;
+    background-image: url(groovebox/cable0010.png);
     z-index: 2;
 }
 .box{
@@ -364,36 +503,36 @@ section {
 }
 .jog{
     position: relative;
-    left: 310px;
-    top: -275px;
-    width: 111px;
-    height: 98px;
-    background-image: url(groovebox/jog.gif);
+    left: -225px;
+    top: 50px;
+    width: 99px;
+    height: 84px;
+    background-image: url(groovebox/jogshuttle0001.png);
     z-index: 4;
 }
 .fader1{
     position: relative;
-    left: 0px;
+    left: 120px;
     top: -180px;
     width: 34px;
-    height: 193px;
-    background-image: url(groovebox/fader.gif);
+    height: 187px;
+    background-image: url(groovebox/fader0010.png);
     z-index: 5;
 }
 .fader2{
     position: relative;
-    left: 10px;
+    left: 130px;
     top: -180px;
     width: 34px;
-    height: 193px;
-    background-image: url(groovebox/fader.gif);
+    height: 187px;
+    background-image: url(groovebox/fader0008.png);
     z-index: 5;
 }
 .btngrid{
     position:relative;
     display: flex;
     flex-wrap: wrap;
-    left: 20px;
+    left: 140px;
     top: -180px;
     width: 200px;
     height: 200px;
@@ -402,9 +541,16 @@ section {
 .btn{
     position: relative;
     width: 50px;
-    height: 46px;
+    height: 44px;
     z-index: 5;
-    background-image: url(groovebox/bouton.gif);
+    background-image: url(groovebox/button.png);
+}
+.btn:hover{
+    position: relative;
+    width: 50px;
+    height: 44px;
+    z-index: 5;
+    background-image: url(groovebox/buttonactive.png);
 }
 .rightbar{
     display: flex;
@@ -412,8 +558,22 @@ section {
     align-items: center;
     justify-content: center;
     translate: 0px -5px;
-    width: 40%;
+    width: 500px;
     border: solid 5px black;
     height: var(--pseudo-height);
     background-color: #8164d7;
+}
+.rightbar2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    translate: 0px -5px;
+    width: 500px;
+    border: solid 5px black;
+    height: var(--pseudo-height);
+    background-color: #8164d7;
+}
+.footer{
+    margin-left: 10px;
 }
