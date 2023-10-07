@@ -97,7 +97,7 @@ const grille=document.getElementById('grille')
 const portfolio=[
     {nom:'SFV Scoreboard for OBS',
      image:'./portfolio/sfvscoreboard.png',
-     description:'Un plugin OBS de scores pour la diffusion de tournois de Street Fighter 5 (textes en français, anglais et italien). Le fond d\'écran change dynamiquement avec les choix de personnages et de couleurs',
+     description:'Un plugin OBS de scores pour la diffusion de tournois de Street Fighter 5 (textes en français, anglais et italien).',
      couleur:'#2E86AB',
      url:'https://github.com/GrooveboxVJ/SFVscoreboardOBS',
      url_desc:'github'},

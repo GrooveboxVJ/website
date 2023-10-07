@@ -441,6 +441,7 @@ section{
 }
 #s4{
     overflow: auto;
+    align-items: start;
 }
 #s4 .content h2{
     user-select: none;
