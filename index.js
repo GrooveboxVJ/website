@@ -133,7 +133,7 @@ const portfolio=[
      url_desc:'site web'},
      {nom:'Brussels Challenge Streaming Overlays',
      image:'./portfolio/bxlchall.png',
-     description:'Développement d\'overlays dynamiques et d\'un scoreboard pour la diffusion du tournoi esports Brussels Challenge Majour Edition 2023 à Tour&Taxis. Les data des 600 participants et 16 tournois sont recueillis automatiquement via des requetes API',
+     description:'Développement d\'overlays dynamiques et d\'un scoreboard pour la diffusion du tournoi esports Brussels Challenge Majour Edition 2023 à Tour&Taxis. Les data des 600 participants et 14 tournois sont recueillis automatiquement via des requetes API',
      couleur:'#565554',
      url:'https://www.linkedin.com/posts/tan-hoa-pham_so-i-was-asked-to-create-all-the-displays-activity-7087817823296638979-ANzq?utm_source=share&utm_medium=member_desktop',
      url_desc:'linkedin'},
