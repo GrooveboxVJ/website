@@ -80,7 +80,7 @@ body{
 }
 .fadein{
     display: flex;
-    animation: sectionfadeIn 5s;
+    animation: sectionfadeIn 3s;
 }
 .fadeout{
     transition: 2s;opacity: 0;

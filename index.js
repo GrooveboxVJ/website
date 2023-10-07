@@ -276,6 +276,12 @@ const hideAllcontents = () => {
         content.style.display="none"
     })
 }
+const showAllcontents = () => {
+    let contents=document.querySelectorAll('.content')
+    contents.forEach(content =>{
+        content.style.display="flex"
+    })
+}
 const showContent = (page) => {
     let content = document.querySelector(`#page${page}`)
     content.style.display='flex'
@@ -323,9 +329,11 @@ parcours.addEventListener('click', ()=>{
 })
 projets.addEventListener('click', ()=>{
     goSection(4,'bouncein')
+    showAllcontents()
 })
 contactme.addEventListener('click',()=>{
     goSection(5,'bouncein')
+    showAllcontents()
 })
 // START
 goSection(1)
